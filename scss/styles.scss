@@ -1,0 +1,1118 @@
+$color-primary: #64849f;
+$color-secondary: #c2c5c8;
+$color-tertiary: #de8003;
+$color-white: #FFF;
+$color-black: #000;
+
+@mixin boxshadow($color: $color-secondary) {
+    box-shadow: 2px 4px 8px 3px darken($color, 30%);
+}
+
+@mixin boxshadowBtn($color: $color-secondary) {
+    box-shadow: 2px 2px 2px 2px lighten($color, 10%);
+}
+
+
+/* GENERAL */
+
+body {
+    background: $color-secondary;
+}
+
+h1 {
+    color: darken($color-primary, 15%);
+    font-family: 'Comfortaa', Verdana, sans-serif;
+}
+
+h2 {
+    color: $color-black;
+    font-family: 'Comfortaa', Verdana, sans-serif;
+}
+
+.btn {
+     @include boxshadowBtn($color-secondary);
+    &__discover {
+        background: $color-tertiary;
+        display: block;
+        margin: auto;
+        &:hover {
+            background: $color-primary;
+            @include boxshadowBtn(darken($color-secondary, 20%));
+        }
+    }
+}
+
+.menu {
+    background-color: darken($color-primary, 10%);
+    position: fixed;
+    z-index: 2;
+    height: 140px;
+    &__item {
+        font-size: 1.4em;
+        margin-left: 30px;
+        display: inline-flex;
+        & a {
+            color: $color-white!important;
+            position: relative;
+            margin-left: 20px;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%) scaleX(0);
+                transform-origin: 50% 50%;
+                width: 100%;
+                height: 2px;
+                background-color: rgba(255,255,255,0.8);
+                transition: transform 250ms;
+            }
+            &:hover {
+                color: $color-tertiary!important;
+                &::after {
+                  transform: translateX(-50%) scaleX(1);
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    &__mail {
+        text-align: center;
+        color: darken($color-primary, 10%);
+        font-size: 1.5em;
+        & p {
+            margin-bottom: 0;
+            font-family: 'Comfortaa', Verdana, sans-serif;
+        }
+        & a {
+            color: $color-tertiary;
+            font-size: 2em;
+            
+        }
+    }
+    &__menu li {
+        list-style-type: none;
+        & a {
+            color: $color-black;
+            font-style: italic;
+            &:hover {
+                color: $color-tertiary;
+                //font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+/* ACCUEIL */
+
+.accueil {
+    margin-top: 140px;
+    background: url("../images/ordi3.jpg") no-repeat fixed;
+    background-size: cover;
+    border-bottom: 1px solid $color-tertiary;
+    z-index: 1;
+    &__box {
+        margin: auto;
+        padding: 50px;
+        padding-bottom: 100px;
+        background-color: rgba(237, 239, 241, 0.8);
+        border: 1px solid black;
+        position: relative;
+    }
+    &__icon {
+        border-radius: 5px;
+        color: $color-primary;
+        font-size: 4em;
+        padding: 4px 6px;
+        position: absolute;
+        bottom: -7%;
+        left: 45%;
+        animation: bounce 0.35s ease infinite alternate;
+    }
+    &__title1 {
+        font-size: 1.8em;
+    }
+    &__title2 {
+        margin-top: 40px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        font-weight: bold;
+        font-size: 2.2em;
+        &::before {
+            content:"";
+            display: block;
+            margin-left: 60%;
+            margin-bottom: 30px;
+            width: 40%;
+            border-top: 10px solid $color-primary;
+        }
+        &::after {
+            content:"";
+            display: block;
+            margin-top: 30px;
+            margin-right: 60%;
+            width: 40%;
+            border-bottom: 10px solid $color-primary;
+        }
+    }
+}
+
+.anim {
+    font-size: 1.3em;
+    font-weight: bold;
+    &__1 {
+        text-align: left;
+        color: darken($color-primary, 15%);
+        animation: introduction 10000ms both ease-out infinite; 
+    }
+    &__2 {
+        text-align: right;
+        color: $color-tertiary;
+        animation: introduction 10000ms both ease-out 1000ms infinite; 
+    }
+    &__3 {
+        text-align: center;
+        color: $color-black;
+        animation: introduction 10000ms both ease-out 2000ms infinite; 
+    }
+    &__4 {
+        text-align: right;
+        color: darken($color-primary, 15%);
+        animation: introduction 10000ms both ease-out 3000ms infinite; 
+    }
+    &__5 {
+        text-align: left;
+        margin-left: 20px;
+        color: $color-tertiary;
+        animation: introduction 10000ms both ease-out 4000ms infinite; 
+    }
+    &__6 {
+        text-align: right;
+        color: darken($color-primary, 15%);
+        animation: introduction 10000ms both ease-in-out 5000ms infinite; 
+    }
+    &__7 {
+        text-align: center;
+        color: $color-black;
+        font-size: 1.2em;
+        font-family: 'Comfortaa', Verdana, sans-serif;
+        text-transform: uppercase;
+        margin-top: 20px;
+        animation: introduction 10000ms both ease-in-out 8000ms infinite; 
+    }
+}
+
+//Animation des phrases qui apparaissent disparaissent en décalé
+@keyframes introduction {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    12% {
+        opacity: 1; 
+        transform: scale(1);
+    }
+    26% {
+        opacity: 1; 
+        transform: scale(1);
+    }
+    40% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+
+//Animation du bouton qui scintille et rebondit
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+        background-color: lighten($color-tertiary, 10%); 
+        box-shadow: 0 0 3px lighten($color-tertiary, 10%);
+    }
+    to {
+        transform: translateY(-20px);
+        background-color: $color-tertiary; 
+        box-shadow: 0 0 3px $color-tertiary;
+    }
+}
+
+/* PRESENTATION */
+
+.present {
+    background: lighten($color-primary, 5%);
+    border-radius: 20px;
+    @include boxshadow($color-secondary);
+    color: $color-white;
+    &__call {
+        color: $color-black;
+    }
+    &__title {
+        padding-left: 20px;
+        margin-bottom: 40px;
+    }
+    &__text {
+        font-style: italic;
+        animation: reveldown 700ms both ease-in-out;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.call {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &__msg {
+        margin-top: 30px;
+        width: 60%;
+        font-weight: bold;
+        text-align: justify;
+        font-family: 'Comfortaa', Verdana, sans-serif;
+        text-shadow: 1px 1px 2px $color-secondary;
+        animation: revelup 700ms both ease-in-out;
+    }
+    &__icon {
+        font-size: 1.3em;
+        color: $color-tertiary;
+        vertical-align: bottom;
+        margin-left: 10px;
+    }
+    &__mail {
+        font-size: 6em;
+        color: $color-tertiary;
+        margin-left: 40px;
+        width: 40%;
+        animation: revelup 700ms both ease-in-out;
+    }
+}
+
+//Animation au chargement de la page pour l'apparition des paragraphes de la présentation
+@keyframes revelup {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes reveldown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* COMPETENCES */
+
+.competences {
+    background: url("../images/ordi6.jpg") no-repeat fixed;
+    background-size: cover;
+    border-top: 1px solid $color-tertiary;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    &__trans, &__tech {
+        padding:50px;
+        background-color: rgba(237, 239, 241, 0.8);
+        position: relative;
+    }
+    &__trans {
+        margin-left: 50px;
+    }
+    &__title {
+        font-family: 'Comfortaa', Verdana, sans-serif;
+        color: $color-tertiary;
+        margin-bottom: 20px;
+    }
+    &__lang {
+        display: block;
+        border: 3px solid black;
+        border-radius: 50%;
+        padding: 5px;
+        text-align: center;
+        position: absolute;
+        transform: scale(1) rotate(0);
+        transition: transform 500ms ease-in-out;
+        &:hover {
+            transform: scale(1.5) rotate(360deg);
+        }
+    }
+    &__check {
+        color: $color-primary;
+        font-size: 1.3em;
+        opacity: 0;
+        animation: check 10s infinite;
+        @for $i from 1 through 5 {
+            &__#{$i} {
+                animation-delay: 1s * $i;
+            }
+        }
+    }
+    &__qual {
+        font-size: 1.3em;
+    }
+}
+
+//Bulles des langages
+#lang-1 {
+    padding: 30px 20px;
+    width: 100px;
+    top: 30%;
+    left: 5%;
+    border-color: $color-tertiary;
+}
+#lang-2 {
+    padding: 40px 20px;
+    width: 100px;
+    top: 30%;
+    left: 70%;;
+    border-color: $color-tertiary;
+}
+#lang-3 {
+    padding: 20px 5px;
+    width: 120px;
+    top: 55%;
+    left: 45%;
+    border-color: $color-primary;
+}
+#lang-4 {
+    padding: 20px 5px;
+    width: 90px;
+    top: 65%;
+    left: 20%;
+    border-color: $color-primary;
+}
+#lang-5 {
+    padding: 20px 5px;
+    width: 110px;
+    top: 35%;
+    left: 35%;
+    border-color: $color-primary;
+}
+.lang {
+    display: block;
+    border: 1px solid darken($color-secondary, 20%);
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    width: 10px;
+    top: 35%;
+    left: 35%;
+}
+#lang-6 {
+    width: 15px;
+    height: 15px;
+    top: 30%;
+    left: 30%;
+}
+#lang-7 {
+    top: 50%;
+    left: 55%;
+}
+#lang-8 {
+    top: 70%;
+    left: 75%;
+}
+#lang-9 {
+    width: 40px;
+    height: 40px;
+    top: 85%;
+    left: 55%;
+}
+#lang-10 {
+    width: 25px;
+    height: 25px;
+    top: 80%;
+    left: 5%;
+}
+
+
+//Animation des checks qui s'affichent au fur et à mesure après les qualités transversales
+@keyframes check {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    border-radius: 20px;
+    @include boxshadow($color-secondary);
+    border: 5px solid $color-primary;
+    &__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__card, &__git {
+        @include boxshadow($color-secondary);
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 20px;
+        width: 30%;  
+    }
+    &__git {
+        width: 100%;
+        background: $color-primary;
+        font-family: 'Comfortaa', Verdana, sans-serif;
+        text-shadow: 1px 1px 2px $color-secondary;
+        color: $color-black;
+        padding: 30px;
+        margin-top: 30px;
+        &__text {
+            margin-bottom: 0;
+        }
+    }
+    &__text {
+        text-align: center;
+    }
+    &__proj {
+        text-align: center;
+        font-family: 'Comfortaa', Verdana, sans-serif;
+        color: $color-primary;
+    }
+}
+
+.git {
+    & a {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    &__icon {
+        color: $color-tertiary;
+        font-size: 3em;
+    }
+}
+
+//Animation zoom des images 
+.card__zoom {
+    width: 95%;
+    margin: 2.5%;
+    border-radius: 15px 15px 0 0;
+    border: 1px solid $color-tertiary;
+    overflow: hidden; 
+    & img {
+        transition: transform .5s ease;
+    }
+    &:hover img {
+        transform: scale(1.5);
+    }
+}
+
+
+/* FORMATION */
+
+.education {
+    margin-top: 90px;
+    background: url("../images/ordi8.jpg") no-repeat fixed;
+    background-size: cover;
+    border-top: 1px solid $color-tertiary;
+    z-index: 1;
+    &__box {
+        margin: auto;
+        padding: 60px;
+        padding-bottom: 100px;
+        background-color: rgba(237, 239, 241, 0.8);
+        border: 1px solid black;
+        position: relative;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__timeline {
+        margin: auto;
+        padding: 70px 30px 30px 30px;
+        position: relative;
+    }
+}
+
+//Mise en page de la timeline
+.timeline {
+    list-style-type: none;
+    &::before {
+        content: "";
+        top: 0;
+        bottom : 0;
+        position: absolute;
+        width: 5px;
+        background: #333;
+        left: 50%;
+        margin-left: -2.5px; 
+    }
+    &__item {
+        margin-bottom: 20px;
+        position: relative; 
+        &::before {
+            content:"";
+            display: table;
+        }
+        &::after {
+            content:"";
+            display: table;
+            clear: both;
+        }
+    }
+    & .timeline__badge {
+        color: $color-tertiary;
+        width: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        text-align: center;
+        position: absolute;
+        top : 16px;
+        left: 50%;
+        margin-left: -25px;
+        background-color: $color-secondary;
+        border-radius: 50%;  
+    }
+    &__card {
+        width: 90%;
+        float: right;
+        margin-right: 40px;
+        border: 1px solid $color-tertiary;
+        border-radius: 7px;
+        padding: 20px 25px;
+        position: relative;
+        @include boxshadow($color-secondary);
+        background: #FFF;
+    }
+    &__container {
+        width: 50%;
+        float: left;
+        transform: translateX(0) scale(1);
+        transition: transform 300ms ease-out;
+        &:hover {
+            transform: translateX(-10%) scale(1.2);
+        }
+    }
+    &__container-inverted {
+        width: 50%;
+        float: right;
+        transform: translateX(0) scale(1);
+        transition: transform 300ms ease-out;
+        &:hover {
+            transform: translateX(10%) scale(1.2);
+        }
+        & .timeline__card {
+            float: right;
+            margin-left: 40px;
+            margin-right: 0;
+        }
+    }
+}
+
+.timecard {
+    &__title {
+        font-family: 'Comfortaa', Verdana, sans-serif;
+        color: $color-primary;
+        font-size: 1.5em;
+    }
+    &__title2 {
+        font-family: 'Comfortaa', Verdana, sans-serif;
+        text-align: left;
+    }
+    &__date {
+        color: darken($color-secondary, 20%);
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 27px;
+        right: -14px;
+        border-top: 14px solid transparent;
+        border-left: 14px solid $color-primary;
+        border-right: 0 solid $color-primary;
+        border-bottom: 14px solid transparent;   
+    }
+}
+
+.timeline__container-inverted .timecard::after {
+    left: -14px;
+    right: auto;
+    border-left-width: 0;
+    border-right-width: 14px; 
+}
+
+
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
+
+@media screen and (min-width : 838px) and (max-width : 1092px) {
+    //Accueil
+    .accueil__title1 {
+        font-size : 1.5em;
+    }
+    .anim {
+        line-height: 15px;
+        &__7 {
+            line-height: 35px;
+        }
+    }
+    //Présentation
+    .call {
+        width: 90%;
+    }
+    //Compétences
+    .competences {
+        flex-direction: column;
+        justify-content: flex-start;
+        &__trans {
+            margin: 0;
+        }
+        &__tech, &__trans {
+            padding: 50px;
+            width: 70%;
+            margin: auto;
+        } 
+        &__tech {
+            margin-bottom: 30px;
+            min-height: 350px;
+            font-size: 1.2em;
+        }
+        &__title {
+            text-align: center;
+        }
+    }
+    #lang-1 {
+        width: 110px;
+    }
+    #lang-2 {
+        width: 100px;
+        top: 35%;
+        left: 65%;
+    }
+    #lang-3 {
+        width: 130px;
+        top: 70%;
+        left: 65%;
+    }
+    #lang-4 {
+        width: 90px;
+         top: 65%;
+        left: 15%;
+    }
+    #lang-5 {
+        width: 130px;
+        top: 45%;
+        left: 30%;
+    }
+    //Portfolio
+    .portfolio {
+        &__box {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        &__card {
+            width: 80%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+    }
+    .timecard {
+        &__title {
+            font-size: 1.3em;
+        }
+    }
+    //Mise en page de la timeline
+    .timeline {
+        &::before {
+            left: 15%;
+            margin-left: -2.5px; 
+        }
+        & .timeline__badge {
+            left: 12%;
+        }
+        &__card {
+            width: 90%;
+            float: right;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        &__container {
+            width: 70%;
+            float: right;
+            margin-right: 100px;
+        }
+        &__container-inverted {
+            width: 70%;
+            float: right;
+            margin-right: 100px;
+            & .timeline__card {
+                float: right;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+    }
+    .timecard {
+        margin-bottom: 30px;
+        &::after {
+            left: -14px;
+            right: auto;
+            border-left-width: 0;
+            border-right-width: 14px;  
+        }
+    }
+}
+
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE------------------------------*/
+
+@media screen and (min-width : 469px) and (max-width : 838px) {
+    //Accueil
+    .accueil {
+        padding: 30px;
+        &__title1 {
+            width: 80%;
+            margin: auto;
+        }
+        &__box {
+            padding: 20px;
+            padding-bottom: 40px;
+        }
+        &__anim {
+            padding: 0;
+        }
+    }
+    .anim {
+        line-height: 25px;
+    }
+    //Présentation
+    .call {
+        width: 90%;
+    }
+    //Compétences
+    .competences {
+        flex-direction: column;
+        justify-content: flex-start;
+        &__trans {
+            margin-left: 0;
+        }
+        &__tech, &__trans {
+            padding: 30px;
+            width: 70%;
+            margin: auto;
+        } 
+        &__tech {
+            margin-bottom: 30px;
+            min-height: 350px;
+        }
+        &__title {
+            text-align: center;
+        }
+    }
+    //Portfolio
+    .portfolio {
+        margin: auto;
+        margin-bottom: 30px;
+        &__box {
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: auto;
+        }
+        &__card {
+            width: 80%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+    }
+    //Mise en page de la timeline
+    .education__box {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .timeline {
+        &::before {
+            left: 5%;
+            margin-left: -2.5px; 
+        }
+        & .timeline__badge {
+            left: 0%;
+        }
+        &__card {
+            width: 90%;
+            float: right;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        &__container {
+            width: 90%;
+            float: right;
+            margin-right: 0px;
+        }
+        &__container-inverted {
+            width: 90%;
+            float: right;
+            margin-right: 0px;
+            &:hover {
+            transform: translateX(-10%) scale(1.2);
+            }
+            & .timeline__card {
+                float: right;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+    }    
+    .timecard {
+        margin-bottom: 30px;
+        &__title {
+            font-size: 1.2em;
+        }
+        &__title2 {
+            font-size: 1em;
+        }
+        &::after {
+            left: -14px;
+            right: auto;
+            border-left-width: 0;
+            border-right-width: 14px;  
+        }
+    }
+    .git__text {
+    text-align: center;
+    }
+}
+
+/* MEDIA QUERIES POUR ADAPTER LE SITE A UN PETIT ECRAN SMARTPHONE------------------------------*/
+
+@media screen and (max-width : 469px) {
+    //Accueil
+    .accueil {
+        padding: 30px;
+        &__title1 {
+            width: 100%;
+            font-size: 1.3em;
+            margin: auto;
+        }
+        &__title2 {
+            font-size: 1.6em;
+            margin-bottom: 30px;
+        }
+        &__box {
+            padding: 20px;
+            padding-bottom: 40px;
+        }
+        &__anim {
+            padding: 0;
+        }
+        &__icon {
+            left: 40%;
+        }
+    }
+    .anim {
+        line-height: 25px;
+        font-size: 1.1em;
+    }
+    //Présentation
+    .call {
+        flex-direction: column;
+        width: 100%!important;
+        margin: 0;
+        &__msg {
+            width: 90%;
+        }
+        &__mail {
+            margin: auto;
+        }
+    }
+    //Compétences
+    .competences {
+        flex-direction: column;
+        justify-content: flex-start;
+        &__trans {
+            margin-left: 0;
+            font-size: 0.9em;
+        }
+        &__tech, &__trans {
+            padding: 30px;
+            width: 90%;
+            margin: auto;
+        } 
+        &__tech {
+            margin-bottom: 30px;
+            min-height: 350px;
+            font-size: 0.8em;
+        }
+        &__title {
+            text-align: center;
+        }
+        #lang-1 {
+            padding: 30px 20px;
+            width: 90px;
+            top: 30%;
+            left: 5%;
+            border-color: $color-tertiary;
+        }
+        #lang-2 {
+            padding: 40px 20px;
+            width: 80px;
+            top: 30%;
+            left: 70%;;
+            border-color: $color-tertiary;
+        }
+        #lang-3 {
+            padding: 20px 5px;
+            width: 100px;
+            top: 55%;
+            left: 45%;
+            border-color: $color-primary;
+        }
+        #lang-4 {
+            padding: 20px 5px;
+            width: 70px;
+            top: 65%;
+            left: 20%;
+            border-color: $color-primary;
+        }
+        #lang-5 {
+            padding: 20px 5px;
+            width: 90px;
+            top: 35%;
+            left: 35%;
+            border-color: $color-primary;
+        }
+    }
+    .present__title, .portfolio__title, .competences__title {
+        font-size: 1.8em;
+    }
+    //Portfolio
+    .portfolio {
+        margin: auto;
+        margin-bottom: 30px;
+        &__box {
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: auto;
+        }
+        &__card {
+            width: 100%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+    }
+        //Mise en page de la timeline
+    .education__box {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .timeline {
+        padding-right: 0;
+        &::before {
+            left: 5%;
+            margin-left: -2.5px; 
+        }
+        & .timeline__badge {
+            left: -3%;
+        }
+        &__card {
+            width: 90%;
+            float: right;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        &__container {
+            width: 90%;
+            float: right;
+            margin-right: 0px;
+        }
+        &__container-inverted {
+            width: 90%;
+            float: right;
+            margin-right: 0px;
+            &:hover {
+            transform: translateX(-10%) scale(1.2);
+            }
+            & .timeline__card {
+                float: right;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+    }    
+    .timecard {
+        margin-bottom: 30px;
+        &__title {
+            font-size: 1.2em;
+        }
+        &__title2 {
+            font-size: 1em;
+        }
+        &::after {
+            left: -14px;
+            right: auto;
+            border-left-width: 0;
+            border-right-width: 14px;  
+        }
+    }
+    .git__text {
+    text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
