@@ -96,7 +96,7 @@ h2 {
 /* line 116, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .accueil {
   margin-top: 140px;
-  background: url("../images/ordi3.jpg") no-repeat fixed;
+  background: url("../images/ordi1mini.jpg") no-repeat fixed;
   background-size: cover;
   border-bottom: 1px solid #de8003;
   z-index: 1; }
@@ -288,7 +288,7 @@ h2 {
 /* COMPETENCES */
 /* line 330, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .competences {
-  background: url("../images/ordi6.jpg") no-repeat fixed;
+  background: url("../images/ordi2mini.jpg") no-repeat fixed;
   background-size: cover;
   border-top: 1px solid #de8003;
   display: flex;
@@ -510,7 +510,7 @@ h2 {
 /* line 545, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .education {
   margin-top: 90px;
-  background: url("../images/ordi8.jpg") no-repeat fixed;
+  background: url("../images/ordi3mini.jpg") no-repeat fixed;
   background-size: cover;
   border-top: 1px solid #de8003;
   z-index: 1; }
