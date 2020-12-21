@@ -92,8 +92,7 @@ h2 {
         }
         & a {
             color: $color-tertiary;
-            font-size: 2em;
-            
+            font-size: 2em;     
         }
     }
     &__menu li {
@@ -106,6 +105,19 @@ h2 {
                 //font-weight: bold;
                 text-decoration: none;
             }
+        }
+    }
+    &__menu ul {
+        position: relative;
+        padding-left: 20px;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            border-left: 10px solid $color-tertiary;
         }
     }
 }
@@ -364,7 +376,7 @@ h2 {
         color: $color-primary;
         font-size: 1.3em;
         opacity: 0;
-        animation: check 10s infinite;
+        animation: check 5s  infinite;
         @for $i from 1 through 5 {
             &__#{$i} {
                 animation-delay: 1s * $i;
@@ -455,17 +467,11 @@ h2 {
     0% {
         opacity: 0;
     }
-    5% {
+    30% {
         opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    70% {
-        opacity: 0;
     }
     100% {
-        opacity: 0;
+        opacity: 1;
     }
 }
 
@@ -513,6 +519,7 @@ h2 {
 }
 
 .git {
+    animation: revelup 700ms both ease-in-out;
     & a {
         display: block;
         margin: auto;
@@ -798,6 +805,10 @@ h2 {
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE------------------------------*/
 
 @media screen and (min-width : 469px) and (max-width : 838px) {
+    //Général
+    .footer__mail {
+        font-size: 1.3em;
+    }
     //Accueil
     .accueil {
         padding: 30px;
@@ -916,6 +927,10 @@ h2 {
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN PETIT ECRAN SMARTPHONE------------------------------*/
 
 @media screen and (max-width : 469px) {
+    //Général
+    .footer__mail {
+        font-size: 1.1em;
+    }
     //Accueil
     .accueil {
         padding: 30px;
