@@ -47,12 +47,17 @@ h2 {
     position: fixed;
     z-index: 2;
     height: 140px;
+    &__list {
+        background-color: darken($color-primary, 10%)!important;
+    }
     &__item {
         font-size: 1.4em;
         margin-left: 30px;
         display: inline-flex;
+        background-color: darken($color-primary, 10%)!important;
         & a {
             color: $color-white!important;
+            background-color: darken($color-primary, 10%)!important;
             position: relative;
             margin-left: 20px;
             &::after {
@@ -685,6 +690,16 @@ h2 {
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
 
 @media screen and (min-width : 838px) and (max-width : 1092px) {
+    //Menu
+    .menu {
+        &__item {
+            font-size: 1.2em!important;
+            background-color: darken($color-primary, 10%)!important;
+        }
+        &__last {
+            padding-bottom: 20px!important;
+        }
+     }
     //Accueil
     .accueil__title1 {
         font-size : 1.5em;
@@ -805,6 +820,16 @@ h2 {
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE------------------------------*/
 
 @media screen and (min-width : 469px) and (max-width : 838px) {
+    //Menu
+    .menu {
+        &__item {
+            font-size: 1.2em!important;
+            background-color: darken($color-primary, 10%)!important;
+        }
+        &__last {
+            padding-bottom: 20px!important;
+        }
+     }
     //Général
     .footer__mail {
         font-size: 1.3em;
@@ -927,6 +952,16 @@ h2 {
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN PETIT ECRAN SMARTPHONE------------------------------*/
 
 @media screen and (max-width : 469px) {
+    //Menu
+    .menu {
+        &__item {
+            font-size: 1.2em!important;
+            background-color: darken($color-primary, 10%)!important;
+        }
+        &__last {
+            padding-bottom: 20px!important;
+        }
+     }
     //Général
     .footer__mail {
         font-size: 1.1em;

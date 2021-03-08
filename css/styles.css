@@ -33,16 +33,21 @@ h2 {
   z-index: 2;
   height: 140px; }
   /* line 50, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  .menu__list {
+    background-color: #506a80 !important; }
+  /* line 53, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .menu__item {
     font-size: 1.4em;
     margin-left: 30px;
-    display: inline-flex; }
-    /* line 54, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    display: inline-flex;
+    background-color: #506a80 !important; }
+    /* line 58, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .menu__item a {
       color: #FFF !important;
+      background-color: #506a80 !important;
       position: relative;
       margin-left: 20px; }
-      /* line 58, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+      /* line 63, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
       .menu__item a::after {
         content: '';
         position: absolute;
@@ -54,48 +59,48 @@ h2 {
         height: 2px;
         background-color: rgba(255, 255, 255, 0.8);
         transition: transform 250ms; }
-      /* line 70, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+      /* line 75, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
       .menu__item a:hover {
         color: #de8003 !important; }
-        /* line 72, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+        /* line 77, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
         .menu__item a:hover::after {
           transform: translateX(-50%) scaleX(1); }
 
-/* line 80, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 85, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start; }
-  /* line 85, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 90, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .footer__mail {
     text-align: center;
     color: #506a80;
     font-size: 1.5em; }
-    /* line 89, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 94, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .footer__mail p {
       margin-bottom: 0;
       font-family: 'Comfortaa', Verdana, sans-serif; }
-    /* line 93, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 98, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .footer__mail a {
       color: #de8003;
       font-size: 2em; }
-  /* line 98, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 103, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .footer__menu li {
     list-style-type: none; }
-    /* line 100, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 105, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .footer__menu li a {
       color: #000;
       font-style: italic; }
-      /* line 103, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+      /* line 108, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
       .footer__menu li a:hover {
         color: #de8003;
         text-decoration: none; }
-  /* line 110, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 115, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .footer__menu ul {
     position: relative;
     padding-left: 20px; }
-    /* line 113, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 118, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .footer__menu ul::before {
       content: "";
       display: block;
@@ -106,14 +111,14 @@ h2 {
       border-left: 10px solid #de8003; }
 
 /* ACCUEIL */
-/* line 128, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 133, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .accueil {
   margin-top: 140px;
   background: url("../images/ordi1mini.jpg") no-repeat fixed;
   background-size: cover;
   border-bottom: 1px solid #de8003;
   z-index: 1; }
-  /* line 134, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 139, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .accueil__box {
     margin: auto;
     padding: 50px;
@@ -121,7 +126,7 @@ h2 {
     background-color: rgba(237, 239, 241, 0.8);
     border: 1px solid black;
     position: relative; }
-  /* line 142, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 147, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .accueil__icon {
     border-radius: 5px;
     color: #64849f;
@@ -131,17 +136,17 @@ h2 {
     bottom: -7%;
     left: 45%;
     animation: bounce 0.35s ease infinite alternate; }
-  /* line 152, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 157, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .accueil__title1 {
     font-size: 1.8em; }
-  /* line 155, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 160, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .accueil__title2 {
     margin-top: 40px;
     text-transform: uppercase;
     margin-bottom: 50px;
     font-weight: bold;
     font-size: 2.2em; }
-    /* line 161, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 166, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .accueil__title2::before {
       content: "";
       display: block;
@@ -149,7 +154,7 @@ h2 {
       margin-bottom: 30px;
       width: 40%;
       border-top: 10px solid #64849f; }
-    /* line 169, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 174, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .accueil__title2::after {
       content: "";
       display: block;
@@ -158,42 +163,42 @@ h2 {
       width: 40%;
       border-bottom: 10px solid #64849f; }
 
-/* line 180, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 185, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .anim {
   font-size: 1.3em;
   font-weight: bold; }
-  /* line 183, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 188, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .anim__1 {
     text-align: left;
     color: #465d71;
     animation: introduction 10000ms both ease-out infinite; }
-  /* line 188, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 193, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .anim__2 {
     text-align: right;
     color: #de8003;
     animation: introduction 10000ms both ease-out 1000ms infinite; }
-  /* line 193, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 198, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .anim__3 {
     text-align: center;
     color: #000;
     animation: introduction 10000ms both ease-out 2000ms infinite; }
-  /* line 198, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 203, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .anim__4 {
     text-align: right;
     color: #465d71;
     animation: introduction 10000ms both ease-out 3000ms infinite; }
-  /* line 203, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 208, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .anim__5 {
     text-align: left;
     margin-left: 20px;
     color: #de8003;
     animation: introduction 10000ms both ease-out 4000ms infinite; }
-  /* line 209, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 214, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .anim__6 {
     text-align: right;
     color: #465d71;
     animation: introduction 10000ms both ease-in-out 5000ms infinite; }
-  /* line 214, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 219, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .anim__7 {
     text-align: center;
     color: #000;
@@ -231,27 +236,27 @@ h2 {
     box-shadow: 0 0 3px #de8003; } }
 
 /* PRESENTATION */
-/* line 266, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 271, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .present {
   background: #7490a9;
   border-radius: 20px;
   box-shadow: 2px 4px 8px 3px #72797f;
   color: #FFF; }
-  /* line 271, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 276, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .present__call {
     color: #000; }
-  /* line 274, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 279, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .present__title {
     padding-left: 20px;
     margin-bottom: 40px; }
-  /* line 278, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 283, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .present__text {
     font-style: italic;
     animation: reveldown 700ms both ease-in-out;
     padding-left: 20px;
     padding-right: 20px; }
 
-/* line 286, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 291, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .call {
   width: 70%;
   margin: auto;
@@ -259,7 +264,7 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center; }
-  /* line 293, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 298, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .call__msg {
     margin-top: 30px;
     width: 60%;
@@ -268,13 +273,13 @@ h2 {
     font-family: 'Comfortaa', Verdana, sans-serif;
     text-shadow: 1px 1px 2px #c2c5c8;
     animation: revelup 700ms both ease-in-out; }
-  /* line 302, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 307, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .call__icon {
     font-size: 1.3em;
     color: #de8003;
     vertical-align: bottom;
     margin-left: 10px; }
-  /* line 308, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 313, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .call__mail {
     font-size: 6em;
     color: #de8003;
@@ -299,7 +304,7 @@ h2 {
     transform: translateY(0px); } }
 
 /* COMPETENCES */
-/* line 342, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 347, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .competences {
   background: url("../images/ordi2mini.jpg") no-repeat fixed;
   background-size: cover;
@@ -307,20 +312,20 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
-  /* line 349, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 354, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .competences__trans, .competences__tech {
     padding: 50px;
     background-color: rgba(237, 239, 241, 0.8);
     position: relative; }
-  /* line 354, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 359, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .competences__trans {
     margin-left: 50px; }
-  /* line 357, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 362, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .competences__title {
     font-family: 'Comfortaa', Verdana, sans-serif;
     color: #de8003;
     margin-bottom: 20px; }
-  /* line 362, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 367, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .competences__lang {
     display: block;
     border: 3px solid black;
@@ -330,35 +335,35 @@ h2 {
     position: absolute;
     transform: scale(1) rotate(0);
     transition: transform 500ms ease-in-out; }
-    /* line 371, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 376, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__lang:hover {
       transform: scale(1.5) rotate(360deg); }
-  /* line 375, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 380, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .competences__check {
     color: #64849f;
     font-size: 1.3em;
     opacity: 0;
     animation: check 5s  infinite; }
-    /* line 381, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 386, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__check__1 {
       animation-delay: 1s; }
-    /* line 381, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 386, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__check__2 {
       animation-delay: 2s; }
-    /* line 381, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 386, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__check__3 {
       animation-delay: 3s; }
-    /* line 381, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 386, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__check__4 {
       animation-delay: 4s; }
-    /* line 381, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 386, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__check__5 {
       animation-delay: 5s; }
-  /* line 386, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 391, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .competences__qual {
     font-size: 1.3em; }
 
-/* line 392, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 397, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 #lang-1 {
   padding: 30px 20px;
   width: 100px;
@@ -366,7 +371,7 @@ h2 {
   left: 5%;
   border-color: #de8003; }
 
-/* line 399, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 404, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 #lang-2 {
   padding: 40px 20px;
   width: 100px;
@@ -374,7 +379,7 @@ h2 {
   left: 70%;
   border-color: #de8003; }
 
-/* line 406, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 411, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 #lang-3 {
   padding: 20px 5px;
   width: 120px;
@@ -382,7 +387,7 @@ h2 {
   left: 45%;
   border-color: #64849f; }
 
-/* line 413, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 418, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 #lang-4 {
   padding: 20px 5px;
   width: 90px;
@@ -390,7 +395,7 @@ h2 {
   left: 20%;
   border-color: #64849f; }
 
-/* line 420, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 425, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 #lang-5 {
   padding: 20px 5px;
   width: 110px;
@@ -398,7 +403,7 @@ h2 {
   left: 35%;
   border-color: #64849f; }
 
-/* line 427, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 432, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .lang {
   display: block;
   border: 1px solid #8c9298;
@@ -409,31 +414,31 @@ h2 {
   top: 35%;
   left: 35%; }
 
-/* line 437, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 442, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 #lang-6 {
   width: 15px;
   height: 15px;
   top: 30%;
   left: 30%; }
 
-/* line 443, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 448, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 #lang-7 {
   top: 50%;
   left: 55%; }
 
-/* line 447, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 452, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 #lang-8 {
   top: 70%;
   left: 75%; }
 
-/* line 451, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 456, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 #lang-9 {
   width: 40px;
   height: 40px;
   top: 85%;
   left: 55%; }
 
-/* line 457, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 462, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 #lang-10 {
   width: 25px;
   height: 25px;
@@ -449,27 +454,27 @@ h2 {
     opacity: 1; } }
 
 /* PORTFOLIO */
-/* line 480, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 485, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .portfolio {
   border-radius: 20px;
   box-shadow: 2px 4px 8px 3px #72797f;
   border: 5px solid #64849f; }
-  /* line 484, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 489, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .portfolio__box {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
-  /* line 489, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 494, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .portfolio__title {
     margin-bottom: 40px; }
-  /* line 492, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 497, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .portfolio__card, .portfolio__git {
     box-shadow: 2px 4px 8px 3px #72797f;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 20px;
     width: 30%; }
-  /* line 499, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 504, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .portfolio__git {
     width: 100%;
     background: #64849f;
@@ -478,54 +483,54 @@ h2 {
     color: #000;
     padding: 30px;
     margin-top: 30px; }
-    /* line 507, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 512, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .portfolio__git__text {
       margin-bottom: 0; }
-  /* line 511, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 516, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .portfolio__text {
     text-align: center; }
-  /* line 514, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 519, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .portfolio__proj {
     text-align: center;
     font-family: 'Comfortaa', Verdana, sans-serif;
     color: #64849f; }
 
-/* line 521, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 526, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .git {
   animation: revelup 700ms both ease-in-out; }
-  /* line 523, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 528, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .git a {
     display: block;
     margin: auto;
     text-align: center; }
-  /* line 528, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 533, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .git__icon {
     color: #de8003;
     font-size: 3em; }
 
-/* line 535, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 540, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .card__zoom {
   width: 95%;
   margin: 2.5%;
   border-radius: 15px 15px 0 0;
   border: 1px solid #de8003;
   overflow: hidden; }
-  /* line 541, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 546, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .card__zoom img {
     transition: transform .5s ease; }
-  /* line 544, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 549, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .card__zoom:hover img {
     transform: scale(1.5); }
 
 /* FORMATION */
-/* line 552, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 557, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .education {
   margin-top: 90px;
   background: url("../images/ordi3mini.jpg") no-repeat fixed;
   background-size: cover;
   border-top: 1px solid #de8003;
   z-index: 1; }
-  /* line 558, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 563, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .education__box {
     margin: auto;
     padding: 60px;
@@ -533,19 +538,19 @@ h2 {
     background-color: rgba(237, 239, 241, 0.8);
     border: 1px solid black;
     position: relative; }
-  /* line 566, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 571, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .education__title {
     margin-bottom: 30px; }
-  /* line 569, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 574, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .education__timeline {
     margin: auto;
     padding: 70px 30px 30px 30px;
     position: relative; }
 
-/* line 577, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 582, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .timeline {
   list-style-type: none; }
-  /* line 579, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 584, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline::before {
     content: "";
     top: 0;
@@ -555,20 +560,20 @@ h2 {
     background: #333;
     left: 50%;
     margin-left: -2.5px; }
-  /* line 589, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 594, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline__item {
     margin-bottom: 20px;
     position: relative; }
-    /* line 592, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 597, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timeline__item::before {
       content: "";
       display: table; }
-    /* line 596, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 601, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timeline__item::after {
       content: "";
       display: table;
       clear: both; }
-  /* line 602, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 607, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline .timeline__badge {
     color: #de8003;
     width: 50px;
@@ -581,7 +586,7 @@ h2 {
     margin-left: -25px;
     background-color: #c2c5c8;
     border-radius: 50%; }
-  /* line 615, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 620, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline__card {
     width: 90%;
     float: right;
@@ -592,46 +597,46 @@ h2 {
     position: relative;
     box-shadow: 2px 4px 8px 3px #72797f;
     background: #FFF; }
-  /* line 626, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 631, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline__container {
     width: 50%;
     float: left;
     transform: translateX(0) scale(1);
     transition: transform 300ms ease-out; }
-    /* line 631, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 636, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timeline__container:hover {
       transform: translateX(-10%) scale(1.2); }
-  /* line 635, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 640, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline__container-inverted {
     width: 50%;
     float: right;
     transform: translateX(0) scale(1);
     transition: transform 300ms ease-out; }
-    /* line 640, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 645, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timeline__container-inverted:hover {
       transform: translateX(10%) scale(1.2); }
-    /* line 643, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 648, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timeline__container-inverted .timeline__card {
       float: right;
       margin-left: 40px;
       margin-right: 0; }
 
-/* line 652, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 657, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .timecard__title {
   font-family: 'Comfortaa', Verdana, sans-serif;
   color: #64849f;
   font-size: 1.5em; }
 
-/* line 657, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 662, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .timecard__title2 {
   font-family: 'Comfortaa', Verdana, sans-serif;
   text-align: left; }
 
-/* line 661, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 666, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .timecard__date {
   color: #8c9298; }
 
-/* line 664, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 669, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .timecard::after {
   content: "";
   display: inline-block;
@@ -643,7 +648,7 @@ h2 {
   border-right: 0 solid #64849f;
   border-bottom: 14px solid transparent; }
 
-/* line 677, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+/* line 682, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
 .timeline__container-inverted .timecard::after {
   left: -14px;
   right: auto;
@@ -652,105 +657,112 @@ h2 {
 
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN TABLETTE------------------------------*/
 @media screen and (min-width: 838px) and (max-width: 1092px) {
-  /* line 689, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 695, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  .menu__item {
+    font-size: 1.2em !important;
+    background-color: #506a80 !important; }
+  /* line 699, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  .menu__last {
+    padding-bottom: 20px !important; }
+  /* line 704, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .accueil__title1 {
     font-size: 1.5em; }
-  /* line 692, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 707, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .anim {
     line-height: 15px; }
-    /* line 694, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 709, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .anim__7 {
       line-height: 35px; }
-  /* line 699, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 714, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .call {
     width: 90%; }
-  /* line 703, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 718, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .competences {
     flex-direction: column;
     justify-content: flex-start; }
-    /* line 706, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 721, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__trans {
       margin: 0; }
-    /* line 709, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 724, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__tech, .competences__trans {
       padding: 50px;
       width: 70%;
       margin: auto; }
-    /* line 714, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 729, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__tech {
       margin-bottom: 30px;
       min-height: 350px;
       font-size: 1.2em; }
-    /* line 719, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 734, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__title {
       text-align: center; }
-  /* line 723, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 738, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   #lang-1 {
     width: 110px; }
-  /* line 726, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 741, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   #lang-2 {
     width: 100px;
     top: 35%;
     left: 65%; }
-  /* line 731, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 746, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   #lang-3 {
     width: 130px;
     top: 70%;
     left: 65%; }
-  /* line 736, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 751, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   #lang-4 {
     width: 90px;
     top: 65%;
     left: 15%; }
-  /* line 741, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 756, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   #lang-5 {
     width: 130px;
     top: 45%;
     left: 30%; }
-  /* line 748, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 763, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .portfolio__box {
     flex-direction: column;
     justify-content: flex-start; }
-  /* line 752, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 767, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .portfolio__card {
     width: 80%;
     margin: auto;
     margin-bottom: 30px; }
-  /* line 759, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 774, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timecard__title {
     font-size: 1.3em; }
-  /* line 765, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 780, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline::before {
     left: 15%;
     margin-left: -2.5px; }
-  /* line 769, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 784, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline .timeline__badge {
     left: 12%; }
-  /* line 772, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 787, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline__card {
     width: 90%;
     float: right;
     margin-left: 0px;
     margin-right: 0px; }
-  /* line 778, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 793, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline__container {
     width: 70%;
     float: right;
     margin-right: 100px; }
-  /* line 783, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 798, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline__container-inverted {
     width: 70%;
     float: right;
     margin-right: 100px; }
-    /* line 787, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 802, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timeline__container-inverted .timeline__card {
       float: right;
       margin-left: 0px;
       margin-right: 0px; }
-  /* line 794, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 809, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timecard {
     margin-bottom: 30px; }
-    /* line 796, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 811, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timecard::after {
       left: -14px;
       right: auto;
@@ -759,285 +771,299 @@ h2 {
 
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN ECRAN SMARTPHONE------------------------------*/
 @media screen and (min-width: 469px) and (max-width: 838px) {
-  /* line 809, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 825, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  .menu__item {
+    font-size: 1.2em !important;
+    background-color: #506a80 !important; }
+  /* line 829, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  .menu__last {
+    padding-bottom: 20px !important; }
+  /* line 834, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .footer__mail {
     font-size: 1.3em; }
-  /* line 813, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 838, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .accueil {
     padding: 30px; }
-    /* line 815, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 840, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .accueil__title1 {
       width: 80%;
       margin: auto; }
-    /* line 819, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 844, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .accueil__box {
       padding: 20px;
       padding-bottom: 40px; }
-    /* line 823, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 848, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .accueil__anim {
       padding: 0; }
-  /* line 827, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 852, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .anim {
     line-height: 25px; }
-  /* line 831, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 856, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .call {
     width: 90%; }
-  /* line 835, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 860, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .competences {
     flex-direction: column;
     justify-content: flex-start; }
-    /* line 838, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 863, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__trans {
       margin-left: 0; }
-    /* line 841, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 866, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__tech, .competences__trans {
       padding: 30px;
       width: 70%;
       margin: auto; }
-    /* line 846, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 871, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__tech {
       margin-bottom: 30px;
       min-height: 350px; }
-    /* line 850, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 875, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__title {
       text-align: center; }
-  /* line 855, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 880, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .portfolio {
     margin: auto;
     margin-bottom: 30px; }
-    /* line 858, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 883, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .portfolio__box {
       flex-direction: column;
       justify-content: flex-start;
       margin: auto; }
-    /* line 863, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 888, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .portfolio__card {
       width: 80%;
       margin: auto;
       margin-bottom: 30px; }
-  /* line 870, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 895, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .education__box {
     padding-left: 10px;
     padding-right: 10px; }
-  /* line 875, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 900, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline::before {
     left: 5%;
     margin-left: -2.5px; }
-  /* line 879, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 904, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline .timeline__badge {
     left: 0%; }
-  /* line 882, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 907, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline__card {
     width: 90%;
     float: right;
     margin-left: 0px;
     margin-right: 0px; }
-  /* line 888, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 913, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline__container {
     width: 90%;
     float: right;
     margin-right: 0px; }
-  /* line 893, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 918, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline__container-inverted {
     width: 90%;
     float: right;
     margin-right: 0px; }
-    /* line 897, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 922, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timeline__container-inverted:hover {
       transform: translateX(-10%) scale(1.2); }
-    /* line 900, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 925, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timeline__container-inverted .timeline__card {
       float: right;
       margin-left: 0px;
       margin-right: 0px; }
-  /* line 907, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 932, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timecard {
     margin-bottom: 30px; }
-    /* line 909, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 934, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timecard__title {
       font-size: 1.2em; }
-    /* line 912, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 937, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timecard__title2 {
       font-size: 1em; }
-    /* line 915, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 940, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timecard::after {
       left: -14px;
       right: auto;
       border-left-width: 0;
       border-right-width: 14px; }
-  /* line 922, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 947, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .git__text {
     text-align: center; } }
 
 /* MEDIA QUERIES POUR ADAPTER LE SITE A UN PETIT ECRAN SMARTPHONE------------------------------*/
 @media screen and (max-width: 469px) {
-  /* line 931, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 957, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  .menu__item {
+    font-size: 1.2em !important;
+    background-color: #506a80 !important; }
+  /* line 961, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  .menu__last {
+    padding-bottom: 20px !important; }
+  /* line 966, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .footer__mail {
     font-size: 1.1em; }
-  /* line 935, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 970, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .accueil {
     padding: 30px; }
-    /* line 937, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 972, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .accueil__title1 {
       width: 100%;
       font-size: 1.3em;
       margin: auto; }
-    /* line 942, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 977, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .accueil__title2 {
       font-size: 1.6em;
       margin-bottom: 30px; }
-    /* line 946, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 981, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .accueil__box {
       padding: 20px;
       padding-bottom: 40px; }
-    /* line 950, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 985, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .accueil__anim {
       padding: 0; }
-    /* line 953, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 988, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .accueil__icon {
       left: 40%; }
-  /* line 957, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 992, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .anim {
     line-height: 25px;
     font-size: 1.1em; }
-  /* line 962, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 997, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .call {
     flex-direction: column;
     width: 100% !important;
     margin: 0; }
-    /* line 966, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1001, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .call__msg {
       width: 90%; }
-    /* line 969, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1004, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .call__mail {
       margin: auto; }
-  /* line 974, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 1009, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .competences {
     flex-direction: column;
     justify-content: flex-start; }
-    /* line 977, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1012, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__trans {
       margin-left: 0;
       font-size: 0.9em; }
-    /* line 981, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1016, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__tech, .competences__trans {
       padding: 30px;
       width: 90%;
       margin: auto; }
-    /* line 986, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1021, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__tech {
       margin-bottom: 30px;
       min-height: 350px;
       font-size: 0.8em; }
-    /* line 991, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1026, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences__title {
       text-align: center; }
-    /* line 994, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1029, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences #lang-1 {
       padding: 30px 20px;
       width: 90px;
       top: 30%;
       left: 5%;
       border-color: #de8003; }
-    /* line 1001, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1036, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences #lang-2 {
       padding: 40px 20px;
       width: 80px;
       top: 30%;
       left: 70%;
       border-color: #de8003; }
-    /* line 1008, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1043, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences #lang-3 {
       padding: 20px 5px;
       width: 100px;
       top: 55%;
       left: 45%;
       border-color: #64849f; }
-    /* line 1015, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1050, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences #lang-4 {
       padding: 20px 5px;
       width: 70px;
       top: 65%;
       left: 20%;
       border-color: #64849f; }
-    /* line 1022, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1057, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .competences #lang-5 {
       padding: 20px 5px;
       width: 90px;
       top: 35%;
       left: 35%;
       border-color: #64849f; }
-  /* line 1030, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 1065, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .present__title, .portfolio__title, .competences__title {
     font-size: 1.8em; }
-  /* line 1034, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 1069, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .portfolio {
     margin: auto;
     margin-bottom: 30px; }
-    /* line 1037, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1072, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .portfolio__box {
       flex-direction: column;
       justify-content: flex-start;
       margin: auto; }
-    /* line 1042, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1077, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .portfolio__card {
       width: 100%;
       margin: auto;
       margin-bottom: 30px; }
-  /* line 1049, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 1084, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .education__box {
     padding-left: 10px;
     padding-right: 10px; }
-  /* line 1053, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 1088, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timeline {
     padding-right: 0; }
-    /* line 1055, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1090, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timeline::before {
       left: 5%;
       margin-left: -2.5px; }
-    /* line 1059, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1094, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timeline .timeline__badge {
       left: -3%; }
-    /* line 1062, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1097, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timeline__card {
       width: 90%;
       float: right;
       margin-left: 0px;
       margin-right: 0px; }
-    /* line 1068, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1103, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timeline__container {
       width: 90%;
       float: right;
       margin-right: 0px; }
-    /* line 1073, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1108, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timeline__container-inverted {
       width: 90%;
       float: right;
       margin-right: 0px; }
-      /* line 1077, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+      /* line 1112, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
       .timeline__container-inverted:hover {
         transform: translateX(-10%) scale(1.2); }
-      /* line 1080, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+      /* line 1115, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
       .timeline__container-inverted .timeline__card {
         float: right;
         margin-left: 0px;
         margin-right: 0px; }
-  /* line 1087, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 1122, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .timecard {
     margin-bottom: 30px; }
-    /* line 1089, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1124, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timecard__title {
       font-size: 1.2em; }
-    /* line 1092, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1127, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timecard__title2 {
       font-size: 1em; }
-    /* line 1095, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+    /* line 1130, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
     .timecard::after {
       left: -14px;
       right: auto;
       border-left-width: 0;
       border-right-width: 14px; }
-  /* line 1102, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
+  /* line 1137, /Users/Bargeme/Desktop/FormationDevWeb/Portfolio/scss/styles.scss */
   .git__text {
     text-align: center; } }
 
